@@ -1,0 +1,38 @@
+body {
+  background-image: url("https://images.unsplash.com/photo-1634655377962-e6e7b446e7e9?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 100vh;
+}
+
+h6 {
+  height: 300px;
+  width: 300px;
+  position: relative;
+  animation: effect 8s linear infinite;
+}
+
+@keyframes effect {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+span {
+  position: absolute;
+  left: 50%;
+  transform-origin: 0px 150px;
+  transform-style: flat;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 25px;
+  color: plum;
+}
