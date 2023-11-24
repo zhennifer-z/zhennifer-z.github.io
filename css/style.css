@@ -1,20 +1,46 @@
-body {
-  background-image: url("https://images.unsplash.com/photo-1634655377962-e6e7b446e7e9?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-  background-size: cover;
-  background-repeat: no-repeat;
+body{
+  background-color: white;
+  width: 98.8vw;
+}
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  height: 100vh;
+h1{
+  color: #7b706e;
+  font-family: 'Orbitron', sans-serif;
+  z-index: 5;
+  letter-spacing: 3px;
+}
+
+h2{
+  color: #7b706e;
+  font-family: 'Orbitron', sans-serif;
+  z-index: 5;
+  letter-spacing: 3px;
+  font-size: 50px;
+}
+
+.checkers{
+  background: 
+  repeating-linear-gradient(
+    to right, transparent, 
+    transparent 48px, 
+    white 48px, 
+    white 50px
+  ),
+  repeating-linear-gradient(
+    to bottom, transparent,  
+    transparent 48px, 
+    white 48px, 
+    white 50px
+  ),
+  linear-gradient(45deg, #b7aea9, #7b706e);
 }
 
 h6 {
   height: 300px;
   width: 300px;
-  position: relative;
+  /*position: relative; */
   animation: effect 8s linear infinite;
+  z-index: 1;
 }
 
 @keyframes effect {
@@ -34,5 +60,19 @@ span {
   text-transform: uppercase;
   font-weight: 900;
   font-size: 25px;
-  color: plum;
+  color: white;
+}
+
+ul{
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 5px;
+}
+
+/* Change the link color on hover */
+li a:hover {
+  background-color: #b7aea9;
+}
+
+.star{
+  text-decoration: none;
 }
